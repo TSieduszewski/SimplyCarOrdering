@@ -5,5 +5,6 @@ import java.util.ArrayList;
 public interface CarType {
 
     String getTypeName();
-    String getEngine();
+//    void setSpecialElements();
+//    Object getSepcialElement();
 }

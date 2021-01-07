@@ -3,11 +3,9 @@ package com.carorder.app;
 public class VanCarType implements CarType {
 
     private String typeName;
-    private CarEngine carEngine;
 
-   public VanCarType(CarEngine carEngine){
+   public VanCarType(){
        typeName = "Van";
-       this.carEngine = carEngine;
    }
 
 
@@ -16,10 +14,7 @@ public class VanCarType implements CarType {
         return typeName;
     }
 
-    @Override
-    public String getEngine() {
-        return "Paliwo: " + carEngine.fuelType() + ", pojemność: " + carEngine.literCapacity();
-    }
+
 
 
 }

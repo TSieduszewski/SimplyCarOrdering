@@ -13,12 +13,14 @@ public class AppApplication {
 		AnnotationConfigApplicationContext context =
 				new AnnotationConfigApplicationContext(CarConfig.class);
 
-		CarType car = context.getBean("sedanCarType", CarType.class);
+		Order car = context.getBean("actualOrder", Order.class);
 
+		System.out.println("Numer zamówienia:");
+		System.out.println(car.orderNumber());
 		System.out.println("Pojazd:");
-		System.out.println(car.getTypeName());
+		System.out.println(car.getCarTypeName());
 		System.out.println("Silnik");
-		System.out.println(car.getEngine());
+		System.out.println(car.getCarEngine());
 		context.close();
 	}
 

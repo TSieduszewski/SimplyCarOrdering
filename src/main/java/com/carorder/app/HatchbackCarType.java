@@ -4,11 +4,9 @@ package com.carorder.app;
 public class HatchbackCarType implements CarType {
 
     private String typeName;
-    private CarEngine carEngine;
 
-   public HatchbackCarType( CarEngine carEngine){
+   public HatchbackCarType(){
        typeName = "Hatchback";
-       this.carEngine = carEngine;
    }
 
 
@@ -17,10 +15,7 @@ public class HatchbackCarType implements CarType {
         return typeName;
     }
 
-    @Override
-    public String getEngine() {
-        return "Paliwo: " + carEngine.fuelType() + ", pojemność: " + carEngine.literCapacity();
-    }
+
 
 
 }
